@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.preload{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: black;
+    transition: opacity 5s ease;
+    z-index: 99;
+}
+
+.preload-finish{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.pic1{
+    position: absolute;
+    transform: translate(200px, -80px)
+}
+
+.pic2{
+    position: absolute;
+    transform: translate(-200px, -80px)
+}
+
+.anime {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+
+.anime .moon{
+    position: fixed;
+    top: 10%;
+    height: 60%;
+    width: 30%;
+    z-index: -5;
+}
+
+@keyframes lightning {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.anime .itachi1 {
+    position: fixed;
+    top: 4.3%;
+    height: 67.8%;
+    width: 35%;
+    z-index: -4;
+    box-shadow: 0px 0px 500px white,
+
+
+}
+
+.cloud1, 
+.cloud2, 
+.cloud3{
+    height: 50%;
+    position: absolute;
+    right: 0;
+
+}
+
+.anime .cloud1{
+    top: 0%;
+    transform: translate(100%, -5%);
+    animation: clouds 20s ease infinite alternate;
+    z-index: -3;
+}
+
+.anime .cloud2{
+    top: 40%;
+    transform: translate(100%, -40%);
+    animation: clouds 20s ease infinite 4s alternate;
+    z-index: -7;
+
+}
+
+.anime .cloud3{
+    top: 90%;
+    transform: translate(100%, -90%);
+    animation: clouds 20s ease infinite 8s alternate;
+    z-index: -3;
+}
+.cloud4, 
+.cloud5, 
+.cloud6{
+    height: 50%;
+    position: absolute;
+    left: 0%;
+
+}
+
+.anime .cloud4{
+    top: 20%;
+    transform: translate(-100%, -20%);
+    animation: cloud 20s ease infinite alternate;
+    z-index: -7;
+}
+
+.anime .cloud5{
+    top: 60%;
+    transform: translate(-100%, -60%);
+    animation: cloud 20s ease infinite 4s alternate;
+    z-index: -3;
+
+}
+
+.anime .cloud6{
+    top: 70%;
+    transform: translate(-100%, -7%);
+    animation: cloud 20s ease infinite 8s alternate;
+    z-index: -7;
+}
+
+
+@keyframes clouds {
+    from {
+        right: 0%;
+         
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes cloud {
+    from {
+        left: 0%;
+         
+    }
+    to {
+        left: 100%;
+    }
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .content{
+    text-align: center;
+}
+
+
+.content h1 {
+    font-size: 120px;
+    text-transform: uppercase;
+    z-index: 1;
+    color: white;
+
+}
+
+.content a {
+    font-size: 50px;
+    text-transform: uppercase;
+    z-index: 1;
+    color: white;
+    background: blue;
+    text-decoration: none;
+    border-radius: 20%;
+
+}
+
+.content a:hover {
+    color: black;
+    background: orange;
+}
+
+.blog-post {
+    text-align: center;
+}
+
+.blog-post .post .itachi {
+    width: 80%;
+    height: 50%;
+}
+
+.btn-prev{
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: blue;
+    color: white;
+    font-size: 30px;
+}
+
+.btn-prev:hover {
+    color: black;
+    background: orange;
+}
+
+.btn-next{
+    text-decoration: none;
+    text-transform: uppercase;
+    background: blue;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    margin-top: 495px;
+    margin-left: 712px;
+}
+
+.btn-next:hover {
+    color: black;
+    background: orange;
+}
+
+.post-tittle{
+    position: absolute;
+    margin-top: 465px;
+    margin-left: 100px;
+    background: white;
+    font-size: 20px;
+}
+
+.date{
+    position: absolute;
+    background: white;
+    right: 400px;
+}
+
+.date span {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+.date span:nth-child(1){
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.date span:nth-child(2),
+.date span:nth-child(3){
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.blog-post .post .hitachi {
+    width: 50%;
+    height: 530px;
+}
+
+.blog-post .post .itachi2 {
+    width: 78%;
+    height: 529px;
+}
+
+
+
